@@ -1,0 +1,120 @@
+.newsletter-section {
+    padding: 2rem 6rem;
+    background: var(--cor-azul);
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-container h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-container p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.form-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-newsletter input {
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.form-newsletter button {
+    background-color: var(--cor--amarelo);
+    color: var(--cor-preto);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-newsletter button:hover {
+    transform: scale(1.02);
+    background-color: #ffd700;
+}
+
+.newsletter-mensagem {
+    display: block;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.newsletter-mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.newsletter-mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .newsletter-section {
+        padding: 1.5rem 2rem;
+    }
+
+    .newsletter-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-container p {
+        font-size: 0.9rem;
+    }
+
+    .form-newsletter input,
+    .form-newsletter button {
+        font-size: 0.95rem;
+        padding: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-section {
+        padding: 1rem 1rem;
+    }
+
+    .newsletter-container h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .newsletter-container p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-newsletter {
+        gap: 0.75rem;
+    }
+
+    .form-newsletter input,
+    .form-newsletter button {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+
+    .newsletter-mensagem {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+}

@@ -1,0 +1,75 @@
+.Missao,
+.objetivo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--cor-branco);
+  line-height: 1.75;
+}
+
+.Missao {
+  background-image: url(./media/paisagem1.png);
+}
+
+.objetivo {
+  background-image: url(./media/paisagem2.png);
+}
+
+.objetivo h2,
+.Missao h2 {
+  font-size: 3rem;
+}
+
+.objetivo p,
+.Missao p {
+  font-size: 2rem;
+}
+
+@media (max-width: 1350px) {
+    .objetivo h2, .Missao h2 {
+        font-size: 3.5rem;
+    }
+
+    .objetivo p, .Missao p {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .Missao,
+    .objetivo {
+        padding: 1.2rem;
+    }
+
+    .objetivo h2,
+    .Missao h2 {
+        font-size: 2.5rem;
+    }
+
+    .objetivo p,
+    .Missao p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .Missao,
+    .objetivo {
+        padding: 1rem;
+    }
+
+    .objetivo h2,
+    .Missao h2 {
+        font-size: 1.8rem;
+    }
+
+    .objetivo p,
+    .Missao p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+

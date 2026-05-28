@@ -1,0 +1,142 @@
+.perfil-section { 
+    display: flex; 
+    justify-content: center; 
+    padding: 3rem 1rem; 
+    background-color: var(--cor-azul-claro); 
+    min-height: 60vh; 
+}
+
+.perfil-container { 
+    background-color: var(--cor-branco); 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px var(--cor-sombra); 
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.perfil-container h2 { 
+    color: var(--cor-azul); 
+    border-bottom: 2px solid var(--cor-branco); 
+    padding-bottom: 0.5rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.perfil-info-estatica { 
+    background-color: var(--cor-azul-claro); 
+    padding: 1rem; 
+    border-radius: 4px; 
+    margin-bottom: 2rem; 
+}
+
+.perfil-info-estatica p { 
+    margin-bottom: 0.5rem; 
+    color: var(--cor-cinzento--escuro); 
+}
+
+.nota { 
+    font-size: 0.8rem; 
+    color: var(---cor-input--cinzento); 
+    font-style: italic; 
+}
+
+.opcional { 
+    font-size: 0.8rem; 
+    font-weight: normal; 
+    color: var(---cor-input--cinzento);
+}
+
+.form-perfil { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.8rem; 
+}
+
+.form-perfil label { 
+    font-weight: bold; 
+    color: var(--cor-azul); 
+}
+
+.form-perfil input { 
+    padding: 0.8rem; 
+    border: 1px solid var(--cor-cinzento--claro); 
+    border-radius: 4px; 
+    font-size: 1rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.form-perfil button { 
+    background-color: var(--cor-azul); 
+    color: var(--cor-branco); 
+    border: none; 
+    padding: 1rem; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.form-perfil button:hover { 
+    background-color: var(--cor-botao); 
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .perfil-section {
+        padding: 2rem 1rem;
+    }
+
+    .perfil-container {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .perfil-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .form-perfil input,
+    .form-perfil label {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .perfil-container {
+        padding: 1rem;
+    }
+
+    .perfil-container h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .perfil-info-estatica {
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-perfil {
+        gap: 0.6rem;
+    }
+
+    .form-perfil input,
+    .form-perfil label {
+        font-size: 0.9rem;
+    }
+
+    .form-perfil input {
+        padding: 0.65rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .form-perfil button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}

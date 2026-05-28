@@ -1,0 +1,266 @@
+header {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-branco);
+    box-shadow: 3px 0 3px var(--cor-preto);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.logotipo-desktop {
+  display: block;
+  width: 3rem;
+  height: 2.25rem;
+}
+.logo-3d {
+  perspective: 900px;
+  display: inline-block;
+  width: 5%;
+  height: 5%;
+}
+.logo3d-canvas {
+  width: 100%;
+  height: 100%;
+}
+.logo3d-canvas canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.logo-3d:hover {
+  opacity: 0.92;
+}
+.logotipo-mobile {
+  display: none;
+  width: 3rem;
+  height: 3.5rem;
+}
+.menu-toggle {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+ul {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    gap: 1.3rem;
+    margin-left: auto;
+    padding-right: 0;
+    flex-wrap: wrap;
+}
+
+ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.95rem;
+}
+
+button.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  
+  button.menu-toggle {
+    display: block;
+  }
+
+  .logotipo-desktop {
+    display: none;
+  }
+
+  .logotipo-mobile {
+    display: block;
+  }
+
+  .logotipo-mobile img {
+    width: 4rem;
+  }
+
+  ul.nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--cor-branco);
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+  ul.nav-links.closed {
+    display: none;
+  }
+  
+  ul.nav-links.open {
+    display: block;
+  }
+
+}
+
+@media (max-width: 1350px) {
+
+    .logotipo {
+        width: 250px; 
+        height: 100px;
+    }
+
+    ul {
+        font-size:1rem;
+        gap:0.6rem;
+    }
+}
+
+@media (max-width: 980px) {
+
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .logotipo-desktop {
+        display: none;
+    }
+
+    .logotipo-mobile {
+        display: block;
+        width: 60px;
+        height: 70px;
+    }
+
+    .logotipo-mobile img {
+        width: 60px;
+        height: 70px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    button.menu-toggle {
+      display: block;
+    }
+
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--cor-branco);
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+    
+    ul.nav-links.closed {
+      display: none;
+    }
+
+    ul.nav-links.open {
+      display: block;
+    }
+
+  }
+
+
+/* =========================================
+   ESTILOS DOS BOTÕES DE AUTENTICAÇÃO
+   ========================================= */
+
+
+.auth-buttons {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+
+.btn-header-login {
+    color: var(--cor-azul);
+    border: 2px solid var(--cor-azul);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.btn-header-login:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco) !important;
+}
+
+
+.btn-header-register {
+    background-color: var(--cor--amarelo);
+    color: var(--cor-preto) !important;
+    border: 2px solid var(--cor--amarelo);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.btn-header-register:hover {
+    background-color:var(--cor--amarelo);
+    transform: scale(1.05);
+}
+
+
+.auth-user {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.user-greeting {
+    color: var(--cor-azul);
+    font-size: 0.95rem;
+}
+
+.badge-admin {
+    color: var(--cor--vermelho);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+.btn-header-logout {
+    background-color: transparent;
+    border: 2px solid var(--cor--vermelho);
+    color: var(--cor--vermelho);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.btn-header-logout:hover {
+    background-color: var(--cor--vermelho);
+    color: var(--cor-branco);
+}
+
+@media (max-width: 980px) {
+    .auth-buttons, .auth-user {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}

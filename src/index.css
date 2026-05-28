@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kadwa', serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 2rem 6rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-preto);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    gap: 1.3rem;
+    margin-left: auto;
+    padding-right: 0;
+    flex-wrap: wrap;
+}
+
+/*VARIÁVEIS*/
+
+:root {
+  --cor-azul: #1B3577;
+  --cor-azul-claro: #f5f7fa;
+  --cor-branco: #FFFFFF;
+  --cor-preto: #000000;
+  --cor-botao: #3865D7;
+  --cor-cinzento-disabled: #aaa;
+  --cor-cinzento-claro: #cccccc;
+  --cor-input--cinzento: #808080;
+  --cor-cinzento--escuro: #333;
+  --cor--amarelo: #FFCB21;
+  --cor--vermelho: #dc3545;
+  --cor--verde: #155724;
+  --cor--sobra: rgba(0,0,0,0.1);
+}
+
+p.small {
+  font-size: 0.8rem;
+}

@@ -1,0 +1,53 @@
+.conquistas {
+    display: flex;
+    background-image: url(/public/imagens/missao-objetivo/paisagem2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.conquistas p {
+    color: var(--cor-branco);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.conquistas-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+}
+
+.conquistas-container button {
+    color: var(--cor-branco);
+    border: none;
+    background-color: var(--cor-azul);
+    font-size: clamp(.8rem, 2.6vw, 2.6rem);
+    padding-inline: .5em;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+}
+
+.conquistas-container button:hover {
+    background-color: var(--cor-botao);
+    transform: scale(1.1);
+    transition: all .2s ease;
+}
+
+.grafico-container {
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+canvas {
+    background-color: var(--cor-branco);
+    max-height: 30rem;
+}

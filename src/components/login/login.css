@@ -1,0 +1,76 @@
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    background-color: #f0f4f8;
+    padding: 2rem;
+}
+
+.login-container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: var(--cor-azul);
+    margin-bottom: 0.5rem;
+}
+
+.login-container p {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-login input {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-login button {
+    background-color: var(--cor-azul);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-login button:hover:not(:disabled) {
+    background-color: var(--cor-botao);
+}
+
+.form-login button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.mensagem-alerta {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.mensagem-alerta.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.mensagem-alerta.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+}

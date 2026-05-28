@@ -1,0 +1,169 @@
+.eventos-section {
+    padding: 2rem 6rem;
+    background-image: url("./media/paisagem2.png");
+}
+
+.eventos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.eventos-form-section,
+.eventos-list-section {
+    background-color: var(--cor-branco);
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px var(--cor-sombra);
+}
+
+.eventos-form-section h3,
+.eventos-list-section h3 {
+    color: var(--cor-azul);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.form-evento {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-evento input,
+.form-evento textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.form-evento textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.form-evento button {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-evento button:hover {
+    background-color: var(--cor-botao);
+    transform: scale(1.02);
+}
+
+#cancelar-edicao {
+    background-color: #6c757d;
+    margin-left: 1rem;
+}
+
+#cancelar-edicao:hover {
+    background-color: #5a6268;
+}
+
+.evento-mensagem {
+    display: none;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+.evento-mensagem.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.evento-mensagem.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Tabela de eventos */
+.eventos-tabela {
+    overflow-x: auto;
+}
+
+.eventos-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.eventos-tabela th,
+.eventos-tabela td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--cor-branco);
+}
+
+.eventos-tabela th {
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+}
+
+.eventos-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.eventos-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.btn-editar:hover {
+    background-color: var(--cor-azul);
+    transform: scale(1.1);
+}
+
+.btn-remover:hover {
+    background-color: var(--cor--vermelho);
+    transform: scale(1.1);
+}
+
+.btn-tempo:hover {
+    background-color: var(--cor-azul);
+    transform: scale(1.1);
+}
+
+/* Previsão do tempo */
+.previsao-tempo-resultado {
+    margin-top: 1rem;
+    display: none;
+}
+
+.previsao-card {
+    background:var(--cor-branco);
+    color: var(--cor-azul);
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px var(--cor-sombra);
+}
+
+.previsao-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.previsao-card p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}

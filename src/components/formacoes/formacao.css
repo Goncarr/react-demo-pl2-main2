@@ -1,0 +1,77 @@
+
+.investigacao-main {
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--cor-azul);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.investigacao-main p {
+    font-size: 1.1rem;
+}
+
+.investigacao-viewport {
+    overflow: hidden;
+    width: 83%;
+}
+
+.investigacao-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: stretch;
+}
+
+.investigacao-contentor {
+    flex: 0 0 calc(33.333% - 2rem);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-branco);
+    margin: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+.investigacao-contentor img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.investigacao-contentor p {
+    margin-top: auto;
+}
+
+.investigacao-contentor h2 {
+    color: var(--cor-azul);
+}
+
+.investigacao-contentor button {
+    display: flex;
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    border: solid 0;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.investigacao-contentor button:hover {
+    background: var(--cor-botao);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.saberTexto {
+    font-size: 1.1rem;
+    height: 10rem;
+    overflow: auto;
+}
