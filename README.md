@@ -39,7 +39,7 @@ npm start
 Iniciar o Back-end
 
 Abra um segundo terminal, navegue para a pasta 'CACA_BACKEND'. Inicie o servidor da API executando o seguinte comando:
-noje server.js
+node server.js
 
 ---
 

@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header/Index';
 import Hero from './components/Hero/Index';
-import tempo from './components/tempo/Index';
 import Formacao from './components/formacoes/Index';
 import Investigacao from './components/investigacao/Index';
 import Parcerias from './components/Parcerias/Index';
