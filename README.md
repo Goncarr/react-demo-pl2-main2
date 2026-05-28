@@ -1,6 +1,6 @@
 # Projeto - Entrega 4
 
-##Grupo 1
+## Grupo 1
 Trabalho realizado por:
 * Hernâni Araújo
 * Miguel Albernaz
@@ -9,7 +9,7 @@ Trabalho realizado por:
 
 ---
 
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 
 
@@ -22,7 +22,7 @@ Trabalho realizado por:
 
 ---
 
-##Como Correr a Aplicação
+## Como Correr a Aplicação
 
 ---
 
