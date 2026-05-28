@@ -32,6 +32,14 @@ gerir perfis e controlar permissões de acesso.
 ## Como Correr a Aplicação
 
 
+### 1. Iniciar o Front-end
+Inicie o servidor de desenvolvimento do Front-end executando o comando:
+npm start
+
+Iniciar o Back-end
+
+Abra um segundo terminal, navegue para a pasta 'CACA_BACKEND'. Inicie o servidor da API executando o seguinte comando:
+noje server.js
 
 ---
 
@@ -84,7 +92,6 @@ de chegar à base de dados.
 ### Responsividade
 * Desenvolvida com a abordagem **Mobile-First**, garantindo o funcionamento perfeito desde smartphones em ambiente clínico até monitores de secretária.
 * Utilização de **Flexbox** e **Grid** para a criação de layouts fluidos.
-* Imagens otimizadas com **lazy loading** para poupar o consumo de dados móveis.
 
 ### Segurança
 A autenticação é gerida via JSON Web Tokens. Após o login, o utilizador recebe um token assinado pelo servidor que autoriza os seus pedidos seguintes.
